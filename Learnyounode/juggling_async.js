@@ -1,6 +1,6 @@
 var http = require("http");
 var bl = require("bl");
-var index = 2;
+var index = 2; // ignore first two arguments and start immediately with urls
 
 var urls_queue = function(url, callback){
 	http.get(url, function(response){
